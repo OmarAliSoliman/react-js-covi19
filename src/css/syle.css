@@ -1,0 +1,212 @@
+@import "https://fonts.googleapis.com/css2?family=Cairo&display=swap";
+.clear {
+  clear: both; }
+
+.navbar {
+  font-family: "Cairo", sans-serif;
+  background-color: #3D4490; }
+  .navbar a {
+    color: #fff !important; }
+
+.home-page {
+  font-family: "Cairo", sans-serif; }
+  .home-page header {
+    position: relative;
+    background-color: #3D4490;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/header-over.png");
+    height: 50vh;
+    background-size: cover;
+    background-position: top;
+    position: relative; }
+    .home-page header img {
+      opacity: 0.5; }
+    .home-page header .logo-animation {
+      position: absolute;
+      top: 30%;
+      left: 60%;
+      animation: header-animation 3s ease infinite; }
+
+.slag {
+  color: #fff;
+  padding-top: 90px; }
+  .slag h5 {
+    padding: 0;
+    margin: 0; }
+  .slag .stay_slag {
+    color: #fff; }
+
+.stay-alert h5, .stay-alert p {
+  margin: 0;
+  padding: 0; }
+.stay-alert .stay_alert_header {
+  color: #5994FF;
+  font-size: 35px; }
+.stay-alert .stay_alert_slag {
+  color: #333;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px solid #3D4490;
+  padding-bottom: 10px; }
+  .stay-alert .stay_alert_slag::after {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    content: "\f024" !important;
+    color: #3D4490;
+    margin-left: 5px;
+    margin-top: 4px; }
+
+.select-country {
+  background-color: #F5F5F5; }
+  .select-country .form-control {
+    width: 70% !important;
+    float: left;
+    border-radius: 0 !important;
+    height: calc(1.5em + 0.75rem + 8px) !important;
+    border: 0;
+    border-bottom: 1px solid #DDD !important;
+    font-size: 18px; }
+    .select-country .form-control:focus {
+      outline: 0 !important;
+      box-shadow: none !important; }
+  .select-country .search {
+    background-color: #5994FF;
+    border: none;
+    padding: 10px;
+    width: 25%;
+    margin-top: 2px;
+    margin-left: 5px;
+    color: #fff; }
+  .select-country .show_more_link {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #5994FF;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    margin-left: .5rem;
+    text-decoration: none !important; }
+
+.show-card-info .main-card {
+  width: 92% !important;
+  float: none !important; }
+.show-card-info .show_card_info_img img {
+  width: 5%;
+  margin-left: .5rem; }
+.show-card-info .card {
+  font-weight: bold;
+  width: 45%;
+  float: left;
+  position: relative; }
+  .show-card-info .card h5 {
+    font-size: 23px; }
+  .show-card-info .card .card-title {
+    display: inline-block; }
+  .show-card-info .card .card-state {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    color: #5994FF;
+    font-size: 30px; }
+
+.current_time_date {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #5994FF;
+  color: #fff; }
+
+.error-page {
+  font-family: "Cairo", sans-serif; }
+  .error-page .error_page_content {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .error-page .error_page_content img {
+      width: 100%; }
+
+.country-info {
+  font-family: "Cairo", sans-serif; }
+  .country-info .country_info_content img {
+    width: 10%;
+    border-radius: 5px; }
+  .country-info .country_info_content h4 {
+    color: #3D4490;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600; }
+  .country-info .card h5 {
+    color: #3D4490;
+    font-size: 22px; }
+  .country-info .card p {
+    color: #5994FF;
+    font-size: 25px;
+    font-weight: bold; }
+
+.about-page {
+  font-family: "Cairo", sans-serif; }
+  .about-page .about-header {
+    display: inline-block;
+    color: #3D4490; }
+  .about-page .about-paragraph {
+    border-left: 2px solid #5994FF;
+    border-top: 2px solid #5994FF;
+    font-size: 17px; }
+  .about-page .about-img img {
+    width: 100%; }
+
+.footer {
+  background-color: #3D4490;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/header-over.png");
+  height: 70px;
+  position: relative; }
+  .footer .links {
+    text-align: center;
+    line-height: 70px; }
+    .footer .links span {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #3D4490;
+      background-color: #fff;
+      margin-left: 10px; }
+      .footer .links span a i {
+        color: #000;
+        font-size: 20px; }
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0); } }
+@media (max-width: 524px) {
+  .show-card-info .main-card {
+    width: 100% !important;
+    float: none !important; }
+  .show-card-info .show_card_info_img img {
+    width: 15%;
+    margin-left: .5rem; }
+  .show-card-info .card {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    float: none !important; }
+  .show-card-info .card-m-bottom {
+    margin-bottom: 20px !important; }
+
+  .show_more_link {
+    margin-left: 0rem !important;
+    margin-top: 20px !important; } }
+
+/*# sourceMappingURL=syle.css.map */

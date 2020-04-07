@@ -1,0 +1,305 @@
+@import 'https://fonts.googleapis.com/css2?family=Cairo&display=swap';
+$mainColor: #3D4490;
+$secondColor: #5994FF;
+// @font-face {
+//   font-family: andry;
+//   src: url("../andry-font/ANDRY.ttf");
+// }
+
+$mainFont: 'Cairo', sans-serif;
+
+.clear{
+  clear: both;
+}
+
+// start navbar
+.navbar{
+  font-family: $mainFont;
+  background-color: $mainColor;
+  a{
+    color: #fff !important;
+  }
+}
+
+// start home bage header
+.home-page{
+  font-family: $mainFont;
+  header{
+    position: relative;
+    background-color: $mainColor;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/header-over.png");
+    height: 50vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    img{
+      opacity: 0.5;
+    }
+    .logo-animation{
+      position: absolute;
+      top: 30%;
+      left: 60%;
+      animation: header-animation 3s ease infinite;
+    }
+  }
+}
+
+.slag{
+  color: #fff;
+  padding-top: 90px;
+  h5{
+    padding: 0;
+    margin: 0;
+  }
+  .stay_slag{
+    color: #fff;
+  }
+}
+
+.stay-alert{
+  h5, p{
+    margin: 0;
+    padding: 0;
+  }
+  .stay_alert_header{
+    color: $secondColor;
+    font-size: 35px;
+  }
+  .stay_alert_slag{
+    color: #333;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 3px solid $mainColor;
+    padding-bottom: 10px;
+    &::after{
+      font-family: "Font Awesome 5 Free" !important;
+      font-weight: 900 !important;
+      content: "\f024" !important;
+      color: $mainColor;
+      margin-left: 5px;
+      margin-top: 4px;
+    }
+  }
+}
+
+// component select and search
+.select-country{
+  background-color: #F5F5F5;
+  .form-control{
+    width: 70% !important;
+    float: left;
+    border-radius: 0 !important;
+    height: calc(1.5em + 0.75rem + 8px) !important;
+    border: 0;
+    border-bottom: 1px solid #DDD !important;
+    font-size: 18px;
+    &:focus{
+      outline: 0 !important;
+      box-shadow: none !important;
+    }
+    // option{
+    // }
+  }
+  .search{
+    background-color: $secondColor;
+    border: none;
+    padding: 10px;
+    width: 25%;
+    margin-top: 2px;
+    margin-left: 5px;
+    color: #fff;
+  }
+  .show_more_link{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: $secondColor;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: #fff; 
+    margin-left: .5rem;
+    text-decoration: none !important;
+  }
+}
+
+// component show card 
+.show-card-info{
+  .main-card{
+    width: 92% !important;
+    float: none !important;
+  }
+  .show_card_info_img{
+    img{
+      width: 5%;
+      margin-left: .5rem;
+    }
+  }
+  .card{
+    font-weight: bold;
+    width: 45%;
+    float: left;
+    position: relative;
+    h5{
+      font-size: 23px;
+    }
+    .card-title{
+      display: inline-block;
+    }
+    .card-state{
+      display: inline-block; 
+      position: absolute;
+      right: 5%;
+      top: 25%;
+      color: $secondColor;
+      font-size: 30px;
+    }
+  }
+}
+
+// component Time
+.current_time_date{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: $secondColor;
+  color: #fff;
+}
+
+
+// erroe page
+.error-page{
+  font-family: $mainFont;
+  .error_page_content{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+// component country info
+.country-info{
+  font-family: $mainFont;
+  .country_info_content{
+    img{
+      width: 10%;
+      border-radius: 5px;
+    }
+    h4{
+      color: $mainColor;
+      letter-spacing: 2px;
+      font-size: 15px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+  }
+  .card{
+    h5{
+      color: $mainColor;
+      font-size: 22px;
+    }
+    p{
+      color: $secondColor;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
+
+// component about
+.about-page{
+  font-family: $mainFont;
+  .about-header{
+    display: inline-block;
+    color: $mainColor;
+  }
+  .about-paragraph{
+    border-left: 2px solid $secondColor;
+    border-top: 2px solid $secondColor;
+    font-size: 17px;
+  }
+  .about-img{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+// component footer
+.footer{
+  background-color: $mainColor;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/header-over.png");
+  height: 70px;
+  position: relative;
+  .links{
+    text-align: center;
+    line-height: 70px;
+    span{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $mainColor;
+      background-color: #fff;
+      margin-left: 10px;
+      a{
+        i{
+          color: #000;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+// start animation
+@keyframes header-animation{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+// start media queri
+@media(max-width: 524px){
+ .show-card-info{
+    .main-card{
+      width: 100% !important;
+      float: none !important;
+    }
+    .show_card_info_img{
+      img{
+        width: 15%;
+        margin-left: .5rem;
+      }
+    }
+    .card{
+      width: 100% !important;
+      margin: 0 !important;
+      margin-top: 10px !important;
+      float: none !important;
+    }
+    .card-m-bottom {
+      margin-bottom: 20px !important;
+    }
+  }
+  .show_more_link{
+    margin-left: 0rem !important;
+    margin-top: 20px !important;
+  }
+}
